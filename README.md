@@ -1,3 +1,5 @@
+<img width="784" height="863" alt="Screenshot 2026-06-03 080308" src="https://github.com/user-attachments/assets/a5a678d6-1dc3-42f7-b095-414848697581" />
+<img width="784" height="863" alt="Screenshot 2026-06-03 080308" src="https://github.com/user-attachments/assets/022b9c9d-d140-458b-96b5-db9a2707cb9a" />
 # LU Decomposition 
 
 ## AIM:
@@ -18,22 +20,42 @@ To write a program to find the LU Decomposition of a matrix.
 ```
 /*
 Program to find the L and U matrix.
-Developed by: 
-RegisterNumber: 
+Developed by: Lothika M
+RegisterNumber: 212225040211
 */
+import os
+os.environ["OPENBLAS_NUM_THREADS"]="1"
+import numpy as np
+from scipy.linalg import lu
+A=np.array(eval(input()))
+P,L,U=lu(A)
+print(L)
+print(U)
 ```
 (ii) To find the LU Decomposition of a matrix
 ```
 /*
-Program to find the LU Decomposition of a matrix.
-Developed by: 
-RegisterNumber: 
+Program to find the L and U matrix.
+Developed by: Lothika M
+RegisterNumber: 212225040211
 */
+import os
+os.environ["OPENBLAS_NUM_THREADS"]="1"
+import numpy as np
+from scipy.linalg import lu_factor,lu_solve
+A=np.array(eval(input()))
+b=np.array(eval(input()))
+lu,piv=lu_factor(A)
+X=lu_solve((lu,piv),b)
+print(X)
 ```
 
 ## Output:
 ![lu decomposition]()
 
+<img width="784" height="863" alt="Screenshot 2026-06-03 080308" src="https://github.com/user-attachments/assets/cc360a2c-114e-4b51-8766-a632e431454c" />
+
+<img width="645" height="726" alt="Screenshot 2026-06-03 075757" src="https://github.com/user-attachments/assets/9147a7de-9bf5-4819-857d-741121c22177" />
 
 ## Result:
 Thus the program to find the LU Decomposition of a matrix is written and verified using python programming.
