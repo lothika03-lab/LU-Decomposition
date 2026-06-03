@@ -1,5 +1,4 @@
-<img width="784" height="863" alt="Screenshot 2026-06-03 080308" src="https://github.com/user-attachments/assets/a5a678d6-1dc3-42f7-b095-414848697581" />
-<img width="784" height="863" alt="Screenshot 2026-06-03 080308" src="https://github.com/user-attachments/assets/022b9c9d-d140-458b-96b5-db9a2707cb9a" />
+
 # LU Decomposition 
 
 ## AIM:
